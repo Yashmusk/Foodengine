@@ -1,0 +1,52 @@
+.footer-grid {
+  display: flex;
+  background-color: black;
+  height: 300px;
+}
+
+.list-container {
+  margin-top: 5px;
+  flex: 1;
+  margin: 0 25px;
+  font-weight: bold;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.list1,
+.list2 {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list1 li,
+.list2 li,
+.list3 li {
+  margin-bottom: 20px;
+}
+
+.list2 {
+  margin-left: 120px;
+}
+
+.list3 {
+  list-style-type: none;
+  margin-left: -70px;
+}
+
+.list1 {
+  margin-left: -300px;
+}
+
+.items1 {
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.headings {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 22px;
+  color: #9e9a9a;
+}
