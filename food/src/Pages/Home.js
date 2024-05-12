@@ -4,11 +4,14 @@ import Header from "../Components/Header";
 import Restros from "../Components/Restros";
 import { Carousel } from "react-responsive-carousel";
 import Footer from "../Components/Footer";
+import { useSelectedItems } from "../App";
 
 function Home() {
+  const { selectedItems, setSelectedItems } = useSelectedItems();
+
   return (
     <div>
-      <Header />
+      <Header selectedItems={selectedItems}/>
 
       <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
         <div>
@@ -25,7 +28,7 @@ function Home() {
         </div>
       </Carousel>
 
-      <Restros />
+      <Restros setData={setSelectedItems}/>
 
       <Footer />
     </div>

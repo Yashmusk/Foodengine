@@ -88,7 +88,7 @@ function Header(props) {
               </Button>
             ))}
             <IconButton aria-label="cart" sx={{ height: "20px" }}>
-              <StyledBadge badgeContent={6} color="secondary">
+              <StyledBadge badgeContent={props?.selectedItems.length} color="secondary">
                 <ShoppingCartIcon />
               </StyledBadge>
             </IconButton>
