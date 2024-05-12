@@ -1,42 +1,14 @@
 import React from "react";
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Home from "./Pages/Home";
-import Cart from "./Pages/Cart";
-import Header from "./Components/Header";
-import Contact from "./Pages/Contact";
-import Error from "./Pages/Error";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <Error />,
-  },
-  {
-    path: "/cart",
-    element: <Cart />,
-    errorElement: <Error />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-    errorElement: <Error />,
-  },
-]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <Header /> */}
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );
 

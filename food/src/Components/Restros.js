@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { useState, useEffect } from "react";
 import data1 from "./Mockdata.js";
 
-export default function Restros({ setData }) {
+export default function Restros({setData}) {
   const [restro, setrestro] = useState(
     data1.map(() => ({
       quantity: 1,

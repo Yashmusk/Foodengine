@@ -23,9 +23,12 @@ const drawerWidth = 240;
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
     right: -3,
-    top: 13,
+    // top: 13,
     border: `2px solid ${theme.palette.background.paper}`,
     padding: "0 4px",
+  },
+  "& >svg": {
+    color: "white"
   },
 }));
 
@@ -63,7 +66,7 @@ function Header(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ padding: 0 }}>
+      <AppBar component="nav" sx={{ backgroundColor:"black", padding: 0 }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -88,7 +91,7 @@ function Header(props) {
               </Button>
             ))}
             <IconButton aria-label="cart" sx={{ height: "20px" }}>
-              <StyledBadge badgeContent={6} color="secondary">
+              <StyledBadge badgeContent={props?.selectedItems.length} color="secondary">
                 <ShoppingCartIcon />
               </StyledBadge>
             </IconButton>
