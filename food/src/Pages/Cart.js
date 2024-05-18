@@ -1,12 +1,11 @@
 import React from "react";
 import Header from "../Components/Header";
 
-function Cart(selectedItems) {
+function Cart() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <p>Cart</p>
-      {/* <p>{selectedItems}</p> */}
     </div>
   );
 }

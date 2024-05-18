@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-photo/sideways-asian-dish-with-copy-space_23-2148242494.jpg");
+}
+
+.centered-box1 {
+  width: 500px;
+  height: 450px;
+  background-color: lightblue;
+}
+.centered-box2 {
+  width: 500px;
+  height: 450px;
+  background-color: lightblue;
+  border-left: 1px solid black;
+}
+.img1 {
+  width: 500px;
+  height: 450px;
+}
+.form {
+  width: 500px;
+  height: 450px;
+  background-color: black;
+}
+.text1 {
+  margin-bottom: 5%;
+  color: wheat;
+}
+.form-label {
+  color: white;
+  margin-right: 60%;
+}
+.form-control {
+  margin-right: 18%;
+  width: 293px;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.form-label1 {
+  color: white;
+  margin-right: 65%;
+}
+.form-control1 {
+  margin-right: 18%;
+  width: 293px;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.signinbtn {
+  width: 200px;
+  height: 35px;
+  background-color: #f25019;
+  color: white;
+}
+.btn1 {
+  margin-right: 18%;
+  margin-top: 30px;
+}
+.text {
+  margin-top: 20px;
+  margin-right: 18%;
+}

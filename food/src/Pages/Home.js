@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <div>
-      <Header selectedItems={selectedItems}/>
+      <Header selectedItems={selectedItems} />
 
       <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
         <div>
@@ -28,7 +28,7 @@ function Home() {
         </div>
       </Carousel>
 
-      <Restros setData={setSelectedItems}/>
+      <Restros setData={setSelectedItems} />
 
       <Footer />
     </div>

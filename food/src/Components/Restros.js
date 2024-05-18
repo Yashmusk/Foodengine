@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { useState, useEffect } from "react";
 import data1 from "./Mockdata.js";
 
-export default function Restros({setData}) {
+export default function Restros({ setData }) {
   const [restro, setrestro] = useState(
     data1.map(() => ({
       quantity: 1,
@@ -93,7 +93,10 @@ export default function Restros({setData}) {
         style={{ display: "flex", flexWrap: "wrap" }}
       >
         {filterdata.map((restrodata, index) => (
-          <Card key={index} sx={{ width: "18%", padding: 4, margin: 2 }}>
+          <Card
+            key={index}
+            sx={{ width: "18%", paddingInline: 4, paddingBlock: 2, margin: 2 }}
+          >
             <CardMedia
               component="img"
               alt={restrodata.info.name}
@@ -107,10 +110,12 @@ export default function Restros({setData}) {
               <Typography
                 variant="body2"
                 color="text.secondary"
-                sx={{ marginLeft: "160px" }}
+                sx={{ display: "flex", justifyContent: "space-between" }}
               >
-                {restrodata.info.costForTwo} <br />
-                Rating:{restrodata.info.avgRating}*
+                <p>{restrodata.info.costForTwo} </p>
+                <p>
+                  Rating:<b>{restrodata.info.avgRating}*</b>
+                </p>
               </Typography>
             </CardContent>
 
@@ -118,7 +123,6 @@ export default function Restros({setData}) {
               <CardActions style={{ justifyContent: "center" }}>
                 <Button
                   sx={{
-                    mt: 2,
                     display: "block",
 
                     "&:hover": {
